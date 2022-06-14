@@ -1,11 +1,8 @@
-# WebpackDemo
+# Leaderboard
 
->"To-do list" is a tool that helps to organize the day. It simply lists the things that need to be done and allows to mark them as complete. 
-This project were developed using ES6 and Webpack.
-The CRUD (create, update, delete) methods were implemented.
-The mark task completion and the clear all completed functions were implemented.
-All changes to the To Do List are saved in local storage.
-The user is able to reorder the list by dragging each item, and moving it into the desired position.
+>The leaderboard website displays scores submitted by different players.
+>It also allows you to submit your score.
+>All data is preserved thanks to the external Leaderboard API service.
 
 
 ## Built With
@@ -15,12 +12,11 @@ The user is able to reorder the list by dragging each item, and moving it into t
 - CSS
 - Git
 - Webpack
-- npm
 
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://elsonotake.github.io/TodoList/dist/)
+[Live Demo Link](https://elsonotake.github.io/Leaderboard/dist/)
 
 
 ## Getting Started
@@ -41,11 +37,11 @@ Cloning a repository
 
 - Copy the URL to clone the repository. 
 
-  - To clone the repository using HTTPS : `https://github.com/ElsonOtake/TodoList.git`
+  - To clone the repository using HTTPS : `https://github.com/ElsonOtake/Leaderboard.git`
 
-  - To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority : `git@github.com:ElsonOtake/TodoList.git`
+  - To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority : `git@github.com:ElsonOtake/Leaderboard.git`
 
-  - To clone a repository using GitHub CLI : `gh repo clone ElsonOtake/TodoList`
+  - To clone a repository using GitHub CLI : `gh repo clone ElsonOtake/Leaderboard`
 
 - Open Terminal;
 
