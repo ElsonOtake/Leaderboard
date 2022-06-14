@@ -1,5 +1,5 @@
 {
-  "name": "webpackdemo",
+  "name": "leaderboard",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ElsonOtake/WebpackDemo.git"
+    "url": "git+https://github.com/ElsonOtake/Leaderboard.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ElsonOtake/WebpackDemo/issues"
+    "url": "https://github.com/ElsonOtake/Leaderboard/issues"
   },
-  "homepage": "https://github.com/ElsonOtake/WebpackDemo#readme",
+  "homepage": "https://github.com/ElsonOtake/Leaderboard#readme",
   "devDependencies": {
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",

@@ -1,7 +1,65 @@
-body {
-  background-color: bisque;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.hello {
-  color: red;
+h1 {
+  margin: 3rem 0 0 2rem;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section {
+  width: calc(50% - 4.5rem);
+}
+
+ul {
+  list-style: none;
+  border: 1px solid black;
+  margin: 0 2rem;
+}
+
+li {
+  padding: 0.3rem 0.6rem;
+}
+
+button {
+  padding: 0.3rem;
+}
+
+.recent-score {
+  margin: 3rem 0.6rem 1rem 1rem;
+}
+
+.recent-score div {
+  padding: 0 2rem 1rem;
+}
+
+.add-score {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 2rem 2rem 0.6rem;
+}
+
+.add-score h2 {
+  padding: 0 2rem 1rem;
+}
+
+.add-score input {
+  margin: 0 2rem 1rem;
+  padding: 0.3rem 0.6rem;
+}
+
+.add-score button {
+  width: min-content;
+  align-self: flex-end;
+  margin-right: 2rem;
+}
+
+li:nth-of-type(even) {
+  background-color: #ddd;
 }
