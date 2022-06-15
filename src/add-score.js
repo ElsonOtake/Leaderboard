@@ -1,4 +1,5 @@
 import gameId from "./game-id";
+import msgDisplay from "./msg-display";
 import postData from "./post-data";
 
 const addScore = (name, points) => {
@@ -8,7 +9,7 @@ const addScore = (name, points) => {
     user: name,
     score: points })
   .then(data => {
-    console.log(data);
+    msgDisplay(data.result);
   });
 }
 

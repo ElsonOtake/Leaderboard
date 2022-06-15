@@ -1,3 +1,4 @@
+import msgDisplay from "./msg-display";
 import postData from "./post-data";
 
 const createGame = () => {
@@ -8,6 +9,7 @@ const createGame = () => {
     localStorage.setItem('gameId', JSON.stringify({
       id: data.result.substr(14, 20) 
     }));
+    msgDisplay(data.result);
   });
 }
 
