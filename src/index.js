@@ -5,5 +5,6 @@ import './style.css';
 if (!localStorage.getItem('gameId')) {
   createGame();
 } else {
-  loadScores();
+  const game = JSON.parse(localStorage.getItem('gameId'));
+  loadScores(game.id);
 }
