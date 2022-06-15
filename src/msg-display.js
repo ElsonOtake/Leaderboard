@@ -5,6 +5,6 @@ const msgDisplay = (msg) => {
   setTimeout(() => {
     message.classList.remove('active');
   }, 3000);
-}
+};
 
 export default msgDisplay;

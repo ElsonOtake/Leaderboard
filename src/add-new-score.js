@@ -1,4 +1,4 @@
-import addScore from "./add-score";
+import addScore from './add-score.js';
 
 const addNewScore = () => {
   const submitBtn = document.querySelector('.add-score button');
@@ -11,21 +11,21 @@ const addNewScore = () => {
     } else {
       submitBtn.disabled = true;
     }
-  }
+  };
 
   submitBtn.addEventListener('click', () => {
     addScore(inputTxt.value, inputNum.value);
     inputTxt.value = '';
     inputNum.value = '';
-  })
+  });
 
   inputTxt.addEventListener('input', () => {
     enableButton();
-  })
+  });
 
   inputNum.addEventListener('input', () => {
     enableButton();
-  })
-}
+  });
+};
 
 export default addNewScore;

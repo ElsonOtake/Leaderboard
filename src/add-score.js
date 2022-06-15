@@ -1,16 +1,17 @@
-import gameId from "./game-id";
-import msgDisplay from "./msg-display";
-import postData from "./post-data";
+import gameId from './game-id.js';
+import msgDisplay from './msg-display.js';
+import postData from './post-data.js';
 
 const addScore = (name, points) => {
-  const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/' + gameId() + '/scores/';
+  const requestURL = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId()}/scores/`;
   const request = new Request(requestURL);
-  postData(request, { 
+  postData(request, {
     user: name,
-    score: points })
-  .then(data => {
-    msgDisplay(data.result);
-  });
-}
+    score: points,
+  })
+    .then((data) => {
+      msgDisplay(data.result);
+    });
+};
 
 export default addScore;

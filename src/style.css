@@ -49,6 +49,11 @@ button {
   padding: 0 2rem 1rem;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .add-score {
   display: flex;
   flex-direction: column;
@@ -76,9 +81,4 @@ button {
 
 li:nth-of-type(even) {
   background-color: #ddd;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
 }

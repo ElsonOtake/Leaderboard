@@ -3,11 +3,11 @@ const loadList = (scores) => {
   while (document.querySelector('ul li')) {
     ul.removeChild(document.querySelector('ul li'));
   }
-  scores.result.forEach(scr => {
+  scores.result.forEach((scr) => {
     const li = document.createElement('li');
-    li.innerText = scr.user + ': ' + scr.score;
+    li.innerText = `${scr.user}: ${scr.score}`;
     ul.appendChild(li);
   });
-}
+};
 
 export default loadList;
