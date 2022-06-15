@@ -1,14 +1,13 @@
 const loadList = (scores) => {
   const ul = document.querySelector('ul');
-  const lists = document.querySelectorAll('ul li');
-  const scoreSize = scores.result.length;
-  let listSize = lists.length;
-  while (scoreSize > listSize) {
-    const li = document.createElement('li');
-    li.innerText = scores.result[listSize].user + ': ' + scores.result[listSize].score;
-    ul.appendChild(li);
-    listSize += 1;
+  if (document.querySelector('ul li')) {
+    ul.removeChild(document.querySelectorAll('ul li'));
   }
+  scores.result.forEach(score => {
+    const li = document.createElement('li');
+    li.innerText = score.user + ': ' + scores.score;
+    ul.appendChild(li);
+  });
 }
 
 export default loadList;
