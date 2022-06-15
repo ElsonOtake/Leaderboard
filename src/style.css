@@ -49,6 +49,10 @@ button {
   padding: 0 2rem 1rem;
 }
 
+.add-score label {
+  display: none;
+}
+
 .add-score input {
   margin: 0 2rem 1rem;
   padding: 0.3rem 0.6rem;
