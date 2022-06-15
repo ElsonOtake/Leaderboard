@@ -1,5 +1,7 @@
-const loadScores = (id) => {
-  const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/' + id + '/scores/';
+import gameId from "./game-id";
+
+const loadScores = () => {
+  const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/' + gameId() + '/scores/';
   const request = new Request(requestURL);
   fetch(request)
   .then(response => response.json())
