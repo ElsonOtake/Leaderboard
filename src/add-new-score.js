@@ -14,7 +14,7 @@ const addNewScore = () => {
   }
 
   submitBtn.addEventListener('click', () => {
-    addScore(inputTxt.value, parseInt(inputNum.value, 10));
+    addScore(inputTxt.value, inputNum.value);
     inputTxt.value = '';
     inputNum.value = '';
   })

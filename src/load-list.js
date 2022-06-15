@@ -1,11 +1,11 @@
 const loadList = (scores) => {
   const ul = document.querySelector('ul');
-  if (document.querySelector('ul li')) {
-    ul.removeChild(document.querySelectorAll('ul li'));
+  while (document.querySelector('ul li')) {
+    ul.removeChild(document.querySelector('ul li'));
   }
-  scores.result.forEach(score => {
+  scores.result.forEach(scr => {
     const li = document.createElement('li');
-    li.innerText = score.user + ': ' + scores.score;
+    li.innerText = scr.user + ': ' + scr.score;
     ul.appendChild(li);
   });
 }
