@@ -37,9 +37,9 @@ section {
 }
 
 button {
-  padding: 0.3rem;
+  padding: 0.3rem 0.6rem;
   background-color: #ddd;
-  border: 1px solid #ccc;
+  border: 0.1rem solid #ccc;
 }
 
 .list-score {
@@ -50,8 +50,8 @@ button {
 }
 .list-score ul {
   list-style: none;
-  border: 1px solid black;
-  margin: 0 2rem;
+  border: 0.1rem solid #999;
+  margin: 1rem 2rem;
 }
 .list-score ul li {
   padding: 0.3rem 0.6rem;
@@ -77,6 +77,8 @@ button {
 .add-score input {
   margin: 0 2rem 1rem;
   padding: 0.3rem 0.6rem;
+  border: 0.1rem solid #999;
+  border-radius: 0.2rem;
 }
 .add-score input::-webkit-outer-spin-button,
 .add-score input::-webkit-inner-spin-button {
