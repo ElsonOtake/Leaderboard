@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: bisque;
+
+  h1 {
+    margin-top: 3rem;
+    color: brown;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  p {
+    color: red;
+    margin: 2rem 2rem;
+    display: none;
+  }
+
+  p.active {
+    display: block;
+  }
+}
+
+h2 {
+  color: brown;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section {
+  width: calc(50% - 4.5rem);
+}
+
+ul {
+  list-style: none;
+  border: 1px solid black;
+  margin: 0 2rem;
+
+  li {
+    padding: 0.3rem 0.6rem;
+  }
+
+  li:nth-of-type(even) {
+    background-color: #ddd;
+  }
+  
+  li:nth-of-type(odd) {
+    background-color: white;
+  }
+}
+
+button {
+  padding: 0.3rem;
+}
+
+.list-score {
+  margin: 3rem 0.6rem 1rem 1rem;
+
+  div {
+    padding: 0 2rem 1rem;
+  }
+}
+
+.add-score {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 2rem 2rem 0.6rem;
+
+  h2 {
+    padding: 0 2rem 1rem;
+  }
+
+  label {
+    display: none;
+  }
+
+  input {
+    margin: 0 2rem 1rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  button {
+    width: min-content;
+    align-self: flex-end;
+    margin-right: 2rem;
+  }
+}
