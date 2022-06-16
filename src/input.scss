@@ -4,6 +4,7 @@ $secondary-color: #ddd;
 * {
   margin: 0;
   padding: 0;
+  border: 1px solid white;
 }
 
 body {
@@ -35,7 +36,7 @@ h2 {
 div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 section {
@@ -53,6 +54,7 @@ button {
 
   div {
     padding: 0 2rem 1rem;
+    justify-content: space-between;
   }
 
   ul {
@@ -109,5 +111,11 @@ button {
 @media only screen and (min-width: 768px) {
   section {
     width: calc(50% - 4rem);
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  body h1 {
+    font-size: 2rem;
   }
 }
