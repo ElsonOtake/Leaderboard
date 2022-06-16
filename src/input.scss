@@ -1,4 +1,5 @@
 $primary-color: brown;
+$secondary-color: #ddd;
 
 * {
   margin: 0;
@@ -43,6 +44,8 @@ section {
 
 button {
   padding: 0.3rem;
+  background-color: $secondary-color;
+  border: 1px solid #ccc;
 }
 
 .list-score {
@@ -62,7 +65,7 @@ button {
     }
 
     li:nth-of-type(even) {
-      background-color: #ddd;
+      background-color: $secondary-color;
     }
 
     li:nth-of-type(odd) {
@@ -97,7 +100,7 @@ button {
   button {
     width: min-content;
     align-self: flex-end;
-    margin-right: 2rem;
+    margin: 1rem 2rem;
   }
 }
 

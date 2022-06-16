@@ -7,20 +7,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: bisque;
 }
-
 body h1 {
   margin-top: 3rem;
   color: brown;
   font-size: 3rem;
   text-align: center;
 }
-
 body p {
   color: red;
   margin: 2rem 3rem;
   display: none;
 }
-
 body p.active {
   display: block;
 }
@@ -41,30 +38,27 @@ section {
 
 button {
   padding: 0.3rem;
+  background-color: #ddd;
+  border: 1px solid #ccc;
 }
 
 .list-score {
   margin: 3rem 1rem 1rem;
 }
-
 .list-score div {
   padding: 0 2rem 1rem;
 }
-
 .list-score ul {
   list-style: none;
   border: 1px solid black;
   margin: 0 2rem;
 }
-
 .list-score ul li {
   padding: 0.3rem 0.6rem;
 }
-
 .list-score ul li:nth-of-type(even) {
   background-color: #ddd;
 }
-
 .list-score ul li:nth-of-type(odd) {
   background-color: white;
 }
@@ -74,29 +68,24 @@ button {
   flex-direction: column;
   margin: 3rem 1rem 2rem;
 }
-
 .add-score h2 {
   padding: 0 2rem 1rem;
 }
-
 .add-score label {
   display: none;
 }
-
 .add-score input {
   margin: 0 2rem 1rem;
   padding: 0.3rem 0.6rem;
 }
-
 .add-score input::-webkit-outer-spin-button,
 .add-score input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-
 .add-score button {
   width: min-content;
   align-self: flex-end;
-  margin-right: 2rem;
+  margin: 1rem 2rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -104,3 +93,5 @@ button {
     width: calc(50% - 4rem);
   }
 }
+
+/*# sourceMappingURL=style.css.map */
