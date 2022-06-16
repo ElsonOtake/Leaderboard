@@ -5,16 +5,16 @@ const loadList = (scores) => {
   }
   const header = document.createElement('li');
   const rankHeader = document.createElement('span');
-  rankHeader.innerText = 'Rank'
+  rankHeader.innerText = 'Rank';
   header.appendChild(rankHeader);
   const userHeader = document.createElement('span');
-  userHeader.innerText = 'User'
+  userHeader.innerText = 'User';
   header.appendChild(userHeader);
   const scoreHeader = document.createElement('span');
   scoreHeader.innerText = 'Score';
   header.appendChild(scoreHeader);
   ul.appendChild(header);
-  const sorted = scores.result.sort(({score:a}, {score:b}) => b - a);
+  const sorted = scores.result.sort(({ score: a }, { score: b }) => b - a);
   sorted.forEach((scr, idx) => {
     const li = document.createElement('li');
     const rank = document.createElement('span');
