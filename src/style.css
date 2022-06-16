@@ -15,8 +15,8 @@ body h1 {
 }
 body p {
   color: red;
-  margin: 2rem 3rem;
   display: none;
+  text-align: center;
 }
 body p.active {
   display: block;
