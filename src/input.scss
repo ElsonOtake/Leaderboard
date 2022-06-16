@@ -4,7 +4,6 @@ $secondary-color: #ddd;
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid white;
 }
 
 body {
@@ -72,6 +71,32 @@ button {
 
     li:nth-of-type(odd) {
       background-color: white;
+    }
+
+    li:first-child {
+      background-color: transparent;
+      border-bottom: 0.1rem solid #999;
+      color: $primary-color;
+    }
+
+    span:first-of-type {
+      display: inline-block;
+      width: 10%;
+      text-align: right;
+      padding-right: 0.5rem;
+    }
+
+    span:nth-of-type(2) {
+      display: inline-block;
+      width: 60%;
+      padding-left: 1rem;
+    }
+
+    span:last-of-type {
+      display: inline-block;
+      width: 15%;
+      text-align: right;
+      padding-right: 0.5rem;
     }
   }
 }

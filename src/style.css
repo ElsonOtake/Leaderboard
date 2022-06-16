@@ -1,27 +1,23 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid white;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: bisque;
 }
-
 body h1 {
   margin-top: 3rem;
   color: brown;
   font-size: 3rem;
   text-align: center;
 }
-
 body p {
   color: red;
   margin: 2rem 3rem;
   display: none;
 }
-
 body p.active {
   display: block;
 }
@@ -49,28 +45,45 @@ button {
 .list-score {
   margin: 3rem 1rem 1rem;
 }
-
 .list-score div {
   padding: 0 2rem 1rem;
   justify-content: space-between;
 }
-
 .list-score ul {
   list-style: none;
   border: 0.1rem solid #999;
   margin: 1rem 2rem;
 }
-
 .list-score ul li {
   padding: 0.3rem 0.6rem;
 }
-
 .list-score ul li:nth-of-type(even) {
   background-color: #ddd;
 }
-
 .list-score ul li:nth-of-type(odd) {
   background-color: white;
+}
+.list-score ul li:first-child {
+  background-color: transparent;
+  border-bottom: 0.1rem solid #999;
+  color: brown;
+}
+.list-score ul span:first-of-type {
+  display: inline-block;
+  width: 10%;
+  text-align: right;
+  padding-right: 0.5rem;
+}
+.list-score ul span:nth-of-type(2) {
+  display: inline-block;
+  width: 60%;
+  padding-left: 1rem;
+}
+.list-score ul span:last-of-type {
+  display: inline-block;
+  width: 15%;
+  text-align: right;
+  padding-right: 0.5rem;
 }
 
 .add-score {
@@ -78,27 +91,22 @@ button {
   flex-direction: column;
   margin: 3rem 1rem 2rem;
 }
-
 .add-score h2 {
   padding: 0 2rem 1rem;
 }
-
 .add-score label {
   display: none;
 }
-
 .add-score input {
   margin: 0 2rem 1rem;
   padding: 0.3rem 0.6rem;
   border: 0.1rem solid #999;
   border-radius: 0.2rem;
 }
-
 .add-score input::-webkit-outer-spin-button,
 .add-score input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-
 .add-score button {
   width: min-content;
   align-self: flex-end;
@@ -110,9 +118,10 @@ button {
     width: calc(50% - 4rem);
   }
 }
-
 @media only screen and (max-width: 300px) {
   body h1 {
     font-size: 2rem;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
